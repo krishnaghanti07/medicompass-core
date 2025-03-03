@@ -1,10 +1,10 @@
 
 import { useEffect } from "react";
-import HomePage from "./HomePage";
+import HospitalDetails from "@/components/HospitalDetails";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-export default function Index() {
+export default function HospitalDetailPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -12,8 +12,8 @@ export default function Index() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-grow">
-        <HomePage />
+      <main className="flex-grow pt-24">
+        <HospitalDetails />
       </main>
       <Footer />
     </div>
